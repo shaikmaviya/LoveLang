@@ -399,6 +399,195 @@ body {
   pointer-events: auto;
 }
 
+.love-editor {
+  margin-top: 26px;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(91, 61, 245, 0.18);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(249, 247, 255, 0.95));
+  box-shadow: var(--card-shadow);
+}
+
+.love-editor-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.love-editor-head h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2d1d7a;
+}
+
+.love-editor-sub {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.love-editor-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.love-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 9px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.love-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(47, 24, 120, 0.18);
+}
+
+.love-run {
+  background: linear-gradient(140deg, #5b3df5, #d946ef);
+  color: #ffffff;
+}
+
+.love-reset {
+  background: #f2ecff;
+  color: #3a2aa1;
+}
+
+.love-editor-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.love-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.love-label {
+  font-weight: 700;
+  color: #2d1d7a;
+  font-size: 0.92rem;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+ .love-editor-shell {
+  position: relative;
+  width: 100%;
+  min-height: 440px;
+  border-radius: 16px;
+  border: 1px solid rgba(91, 61, 245, 0.26);
+  background: #101125;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.love-editor-preview,
+.love-editor-area {
+  width: 100%;
+  min-height: 440px;
+  padding: 16px;
+  font-family: "JetBrains Mono", "Fira Code", Consolas, "SFMono-Regular", monospace;
+  font-size: 1.15rem;
+  line-height: 1.75;
+  white-space: pre;
+}
+
+.love-editor-preview {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  color: #f6f2ff;
+  pointer-events: none;
+  overflow: auto;
+}
+
+.love-editor-area {
+  position: relative;
+  border: none;
+  background: transparent;
+  color: transparent;
+  caret-color: #f6f2ff;
+  resize: vertical;
+  outline: none;
+  overflow: auto;
+}
+
+.love-editor-area::selection {
+  background: rgba(217, 70, 239, 0.35);
+}
+
+.love-editor-shell:focus-within {
+  box-shadow: 0 0 0 2px rgba(91, 61, 245, 0.5);
+}
+
+.love-output {
+  min-height: 440px;
+  padding: 16px;
+  border-radius: 14px;
+  background: #0e1020;
+  color: #b9f5ff;
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  font-family: "JetBrains Mono", "Fira Code", Consolas, "SFMono-Regular", monospace;
+  font-size: 1.15rem;
+  line-height: 1.75;
+  white-space: pre-wrap;
+}
+
+.love-editor-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.love-editor-preview .tok-string {
+  color: #f9a8d4;
+}
+
+.love-editor-preview .tok-main {
+  color: #60a5fa;
+  font-weight: 700;
+}
+
+.love-editor-preview .tok-heart {
+  color: #f472b6;
+  font-weight: 600;
+}
+
+.love-editor-preview .tok-whisper {
+  color: #5eead4;
+  font-weight: 600;
+}
+
+.love-editor-preview .tok-iflove,
+.love-editor-preview .tok-elselove,
+.love-editor-preview .tok-elseheart {
+  color: #fde68a;
+  font-weight: 600;
+}
+
+.love-editor-preview .tok-boolean {
+  color: #a7f3d0;
+  font-weight: 600;
+}
+
+.love-editor-preview .tok-number {
+  color: #93c5fd;
+}
+
+.love-editor-preview .tok-secret,
+.love-editor-preview .tok-secret-line {
+  color: #fca5a5;
+  font-style: italic;
+}
+
 .to-top:hover {
   transform: translateY(-2px) scale(1.02);
 }

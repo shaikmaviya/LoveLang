@@ -56,42 +56,46 @@
       </p>
     </section>
 
-    <section id="romantic-lines" class="card">
-      <h2>💝 Romantic Lines</h2>
-      <p>LoveLang-themed lines written with programming keywords:</p>
-      <div class="romantic-split">
-        <div class="romantic-code-block">
-          <h3>Code</h3>
-          <pre><code>heart you = forever
-whisper("My code compiles only with you.")
-
-iflove (you == near) {
-  whisper("World: beautiful")
-} elseheart {
-  whisper("World: empty")
-}
-
-promise myFuture() {
-  missyou "you + me, forever"
-}
-myFuture()
-whilelove (myHeart == forever) {
-  whisper(hug("I choose ", you))
-}
-
-Secret: this line is a hidden note, not executed.
-heart love = forever
-whisper("You are my final output ❤️")</code></pre>
+      <div class="love-editor">
+        <div class="love-editor-head">
+          <div>
+            <h3>Love Executor</h3>
+            <p class="love-editor-sub">Write LoveLang and run it right here.</p>
+          </div>
+          <div class="love-editor-actions">
+            <button class="love-btn love-run" id="loveRun" type="button">Run Love</button>
+            <button class="love-btn love-reset" id="loveReset" type="button">Reset</button>
+          </div>
         </div>
+        <div class="love-editor-grid">
+          <div class="love-panel">
+            <label class="love-label" for="loveEditor">LoveLang Editor</label>
+            <div class="love-editor-shell">
+              <pre id="loveEditorPreview" class="love-editor-preview" aria-hidden="true"></pre>
+              <textarea id="loveEditor" class="love-editor-area" spellcheck="false">main.class {
+  heart you = "Momo"
+  heart me = "LoveLang"
 
-        <div class="romantic-output-block">
-          <h3>Output</h3>
-          <pre><code>My code compiles only with you.
-World: beautiful
-you + me, forever
-I choose you
-You are my final output ❤️</code></pre>
+  whisper(hug("Hello ", you, "!"))
+  whisper(hug("I write in ", me, "."))
+  heart together = forever
+
+  iflove together {
+    whisper("Our hearts compile without errors.")
+  } elseheart {
+    whisper("Let's fix the distance.")
+  }
+
+  whisper("You are my final output ❤️")
+}</textarea>
+            </div>
+          </div>
+          <div class="love-panel">
+            <span class="love-label">Output</span>
+            <pre id="loveOutput" class="love-output" aria-live="polite"></pre>
+          </div>
         </div>
+        <p class="love-editor-note">Use <strong>main.class</strong> as the entry point. Supports heart, whisper, hug, iflove, elselove, elseheart, forever, breakup.</p>
       </div>
     </section>
 
@@ -264,22 +268,24 @@ whisper("End")</code></pre>
     </section>
 
     <section id="why" class="card">
-   <h2>🌟 Why LoveLang?</h2>
-<p style="max-width: none; width: 100%; line-height: 1.75; overflow-wrap: anywhere; margin: 0;">
-  As a developer, I wanted to create something different and creative. While thinking about new ideas, I asked myself —
-  why not build a programming language that expresses love?
+      <h2>🌟 Why LoveLang?</h2>
+      <p style="max-width: none; width: 100%; line-height: 1.75; overflow-wrap: anywhere; margin: 0;">
+        As a developer, I wanted to create something different and creative. While thinking about new ideas, I asked
+        myself —
+        why not build a programming language that expresses love?
 
-  That’s how <strong>LoveLang</strong> was created.
+        That’s how <strong>LoveLang</strong> was created.
 
-  Instead of traditional technical keywords, LoveLang uses romantic words like <em>heart</em>, <em>iflove</em>, and <em>goodbye</em>.
-  This makes code feel emotional, friendly, and enjoyable to read.
+        Instead of traditional technical keywords, LoveLang uses romantic words like <em>heart</em>, <em>iflove</em>,
+        and <em>goodbye</em>.
+        This makes code feel emotional, friendly, and enjoyable to read.
 
-  LoveLang is specially designed to help new coders learn programming in a fun and attractive way. 
-  Beginners often feel scared of complex syntax, but LoveLang makes learning simple, creative, and engaging.
+        LoveLang is specially designed to help new coders learn programming in a fun and attractive way.
+        Beginners often feel scared of complex syntax, but LoveLang makes learning simple, creative, and engaging.
 
-  It is not just about programming — it shows that coding can be artistic, expressive, and unique.
-  Sometimes, crazy ideas turn into beautiful creations.
-</p>
+        It is not just about programming — it shows that coding can be artistic, expressive, and unique.
+        Sometimes, crazy ideas turn into beautiful creations.
+      </p>
 
     </section>
   </main>
